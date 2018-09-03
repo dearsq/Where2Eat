@@ -14,6 +14,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.iyounix.customview.SearchAroundActivity;
+
 public class Where2EatActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -90,7 +92,8 @@ public class Where2EatActivity extends AppCompatActivity
             Intent intent = new Intent(Where2EatActivity.this, BaiduMapActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_gallery) {
-
+            Intent intent = new Intent (Where2EatActivity.this, SearchAroundActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
